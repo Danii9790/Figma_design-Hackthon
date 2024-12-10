@@ -1,26 +1,38 @@
-import React from 'react'
-import Image from 'next/image'
+import React from "react";
+import Image from "next/image";
+
 const Beautyroom = () => {
   return (
-    <main className='w-[1249px] h-[500px] mt-[100px] bg-[#FCF8F3] '>
-    <div className='w-[400px] h-[px] mt-[160px] ml-[80px] text-[#3A3A3A] font-poppins sm:text-sm md:text-2xl lg:text-2xl font-bold size-10 leading-6'>
-    <h1>50+ Beautiful rooms 
-      inspiration</h1>
-    </div>
-    <div className='w-[368px] h-[48px] ml-[100px] mt-[10px] '>
-        <p>Our designer already made a lot of beautiful prototipe of rooms that inspire you</p>
-    </div>
-    <div className='w-[176px] h-[48px] ml-[100px] mt-[60px] bg-[#B88E2F] text-[#FFFFFF]'>
-        <button className='w-[104px] h-[24px] ml-[43px] mt-[10px] '>Explore More</button>
-        <ul className='flex'>
-       <li>
-        <Image src="/beautyroom2.png" alt='beautyroom image 1' width={304} height={382} className='ml-[550px] mt-[-280px]'/>
-        </li>
-        </ul>
-    </div>
-  
-    </main>
-  )
-}
+    <main className="w-full bg-[#FCF8F3] py-10 mt-10">
+      {/* Text Section */}
+      <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center sm:items-start space-y-6 sm:space-y-0 sm:space-x-8">
+        {/* Heading and Description */}
+        <div className="text-center sm:text-left">
+          <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl text-[#3A3A3A] font-bold leading-tight">
+            50+ Beautiful rooms inspiration
+          </h1>
+          <p className="mt-4 text-sm sm:text-base md:text-lg text-gray-600 max-w-sm">
+            Our designer already made a lot of beautiful prototypes of rooms
+            that inspire you.
+          </p>
+          <button className="mt-6 bg-[#B88E2F] hover:bg-[#996b23] text-white px-6 py-3 rounded-lg text-sm sm:text-base">
+            Explore More
+          </button>
+        </div>
 
-export default Beautyroom
+        {/* Image Section */}
+        <div className="flex justify-center sm:justify-end mt-6 sm:mt-0">
+          <Image
+            src="/beautyroom2.png"
+            alt="Beautyroom Image 1"
+            width={304}
+            height={382}
+            className="rounded-lg object-cover"
+          />
+        </div>
+      </div>
+    </main>
+  );
+};
+
+export default Beautyroom;
