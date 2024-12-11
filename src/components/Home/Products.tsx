@@ -12,7 +12,7 @@ const products = [
     title: "Leviosa",
     price: "Rp 2,500.000",
     oldPrice: null,
-    image: "/images 2.png",
+    image: "/image 2.png",
   },
   {
     title: "Lolito",

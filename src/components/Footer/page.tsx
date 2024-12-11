@@ -27,7 +27,7 @@ const Footer = () => {
 
           <li><a href="/payment-options" className="hover:underline">Payment Options</a></li>
           <li><a href="/returns" className="hover:underline">Returns</a></li>
-          <li><a href="/returns" className="hover:underline">Returns</a></li>
+          <li><a href="/returns" className="hover:underline">Privacy Policies</a></li>
 
         </ul>
       </div>

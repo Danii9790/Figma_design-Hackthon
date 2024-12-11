@@ -35,6 +35,7 @@ const Header = () => {
 
         {/* Icons Section */}
         <div className="hidden md:flex items-center space-x-6">
+         <Link href="/checkout">
           <Image
             src="/icons/Vector.png"
             alt="Menu icon"
@@ -42,6 +43,7 @@ const Header = () => {
             height={18.67}
             className="cursor-pointer"
           />
+          </Link>
           <Image
             src="/icons/search.png"
             alt="Search icon"
